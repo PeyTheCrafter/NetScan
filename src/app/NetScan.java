@@ -2,6 +2,8 @@ package app;
 
 import java.io.IOException;
 import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class NetScan {
@@ -84,6 +86,16 @@ public class NetScan {
 		InetAddress address = InetAddress.getByName(ip);
 		if (address.isReachable(this.timeout)) {
 			System.out.println(ip + " --> " + address.getHostName());
+		}
+
+		//TEST: SEARCHING FOR SERVERS AT PORT 9858
+		try {
+			Socket s = new Socket();
+			s.connect(new InetSocketAddress(ip, 9858), timeout);
+			s.close();
+			System.out.println("Server");
+		} catch (Exception e) {
+			//System.out.println("No server.");
 		}
 	}
 
