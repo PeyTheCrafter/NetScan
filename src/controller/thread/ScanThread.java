@@ -1,9 +1,9 @@
-package thread;
+package controller.thread;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
 
-import scanner.LANScanner;
+import controller.scanner.LANScanner;
 
 public class ScanThread extends Thread {
 	private int start;

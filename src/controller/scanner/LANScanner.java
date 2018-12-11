@@ -1,4 +1,4 @@
-package scanner;
+package controller.scanner;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -6,7 +6,7 @@ import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import thread.ScanThread;
+import controller.thread.ScanThread;
 
 public class LANScanner {
 	private String subnet;

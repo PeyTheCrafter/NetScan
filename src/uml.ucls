@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="scanner.LANScanner" project="NetScan" file="/NetScan/src/scanner/LANScanner.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="controller.scanner.LANScanner" project="NetScan" 
+    file="/NetScan/src/controller/scanner/LANScanner.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="348" y="401"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="thread.ScanThread" project="NetScan" file="/NetScan/src/thread/ScanThread.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="controller.thread.ScanThread" project="NetScan" 
+    file="/NetScan/src/controller/thread/ScanThread.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="347" y="146"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -19,8 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="scanner.ServerScanner" project="NetScan" 
-    file="/NetScan/src/scanner/ServerScanner.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="controller.scanner.ServerScanner" project="NetScan" 
+    file="/NetScan/src/controller/scanner/ServerScanner.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="688" y="167"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -28,7 +28,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="main.NetScan" project="NetScan" file="/NetScan/src/main/NetScan.java" 
+  <class id="4" language="java" name="controller.NetScan" project="NetScan" file="/NetScan/src/controller/NetScan.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="839" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="scanner.IpScanner" project="NetScan" file="/NetScan/src/scanner/IpScanner.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="controller.scanner.IpScanner" project="NetScan" 
+    file="/NetScan/src/controller/scanner/IpScanner.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="997" y="176"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
