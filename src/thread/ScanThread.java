@@ -1,14 +1,16 @@
-package app;
+package thread;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
 
-public class Hilo extends Thread {
+import scanner.LANScanner;
+
+public class ScanThread extends Thread {
 	private int start;
 	private int stop;
-	private NetScan ns;
+	private LANScanner ns;
 
-	public Hilo(NetScan ns, String subnet, int start, int stop, int timeout) {
+	public ScanThread(LANScanner ns, String subnet, int start, int stop, int timeout) {
 		this.ns = ns;
 		this.ns.getSubnet();
 		this.start = start;
