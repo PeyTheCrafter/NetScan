@@ -12,28 +12,32 @@ public class IpScanner {
 		this.timeout = timeout;
 	}
 	
+	public static void main(String[] args) {
+		IpScanner ips = new IpScanner(50);
+		InetAddress result = ips.scan("localhost");
+	}
+	
 	/**
 	 * Scans the ip.
 	 * 
 	 * @param ip
 	 *            ip to scan.
+	 * @return 
 	 * @throws UnknownHostException
 	 * @throws IOException
 	 */
-	public void scan(String ip) throws UnknownHostException, IOException {
-		InetAddress address = InetAddress.getByName(ip);
-		if (address.isReachable(this.timeout)) {
-			System.out.println(ip + " --> " + address.getHostName());
-		}
-
-		//TEST: SEARCHING FOR SERVERS AT PORT 9858
+	public InetAddress scan(String ip) {
+		InetAddress address;
 		try {
-			Socket s = new Socket();
-			s.connect(new InetSocketAddress(ip, 9858), timeout);
-			s.close();
-			System.out.println("Server");
-		} catch (Exception e) {
-			//System.out.println("No server.");
+			address = InetAddress.getByName(ip);
+			if (address.isReachable(this.timeout)) {
+				return address;
+			}
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+		return null;
 	}
 }
