@@ -18,7 +18,7 @@ public class IpScanner {
 	}
 	
 	/**
-	 * Scans the ip.
+	 * Scans the ip. que dise tu tonto
 	 * 
 	 * @param ip
 	 *            ip to scan.
